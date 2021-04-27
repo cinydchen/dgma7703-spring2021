@@ -9,12 +9,21 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play the magical girl and the sea lion.</tw-noscript></noscript></tw-story>
-<tw-storydata name="the magical girl and the sea lion" startnode="1" creator="Twine" creator-version="2.3.13" ifid="8FBB21CE-C95D-44A4-8C8B-037448A18253" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="59,38" size="100,100">(set: $name to (prompt: &quot;Your name, please:&quot;, &quot;Magical Girl&quot;))
+<tw-storydata name="the magical girl and the sea lion" startnode="1" creator="Twine" creator-version="2.3.13" ifid="8FBB21CE-C95D-44A4-8C8B-037448A18253" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
+  background-color: white;
+  color: black;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+tw-link{
+  color: #3A3C75;
+  font-size: 125%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="59,38" size="100,100">(set: $name to (prompt: &quot;Your name, please:&quot;, &quot;Magical Girl&quot;))
 
 Rise and shine, $name!
 A storm is brewing outside and we chose you to save us.
 
-&lt;img src=&quot;1.jpg&quot; alt=&quot;bedroom&quot;&gt;
+&lt;img src=&quot;1.jpg&quot; alt=&quot;bedroom&quot; width=&quot;50%&quot;&gt;
 
 
 [[Who are you?]]
@@ -24,17 +33,17 @@ But if you wish to know, look up.
 
 (click: &quot;look up&quot;)[A small yellow bird not even the size of your palm is perched on one of the blades of the ceiling fan. After making eye contact, it swoops down to land on your forehead.
 
-&lt;img src=&quot;2.jpg&quot; alt=&quot;bird&quot;&gt;
+&lt;img src=&quot;2.jpg&quot; alt=&quot;bird&quot; width=&quot;50%&quot;&gt;
 
 [[Chirp Chirp?]]
-]</tw-passagedata><tw-passagedata pid="3" name="Chirp Chirp?" tags="" position="53,167" size="100,100">Now, we don&#39;t have much time. I have picked up a few items from outside for you to utilize in the war.
+]</tw-passagedata><tw-passagedata pid="3" name="Chirp Chirp?" tags="" position="52,167" size="100,100">Now, we don&#39;t have much time. I have picked up a few items from outside for you to utilize in the war.
 
 (click: &quot;war&quot;)[You look out the window and see fish raining from the sky.
-&lt;img src=&quot;3.jpg&quot; alt=&quot;window&quot;&gt;]
+&lt;img src=&quot;3.jpg&quot; alt=&quot;window&quot; width=&quot;50%&quot;&gt;]
 
-[[Items?-&gt;Items?]]</tw-passagedata><tw-passagedata pid="4" name="Items?" tags="" position="205,164" size="100,100">The small yellow bird sets up 3 small objects in front of you, this looks familiar.
+[[Items?-&gt;Items?]]</tw-passagedata><tw-passagedata pid="4" name="Items?" tags="" position="204,164" size="100,100">The small yellow bird sets up 3 small objects in front of you, this looks familiar.
 
-&lt;img src=&quot;4.jpg&quot; alt=&quot;rps&quot;&gt;
+&lt;img src=&quot;4.jpg&quot; alt=&quot;rps&quot; width=&quot;50%&quot;&gt;
 Which one do you choose?
 [[Rock-&gt;Rock]]
 [[Paper-&gt;Paper]]
@@ -46,17 +55,17 @@ Which one do you choose?
 
 (go-to: &quot;Rps&quot;)</tw-passagedata><tw-passagedata pid="7" name="Scissors" tags="" position="335,314" size="100,100">(set: $magictype to &quot;Scissors&quot;)
 
-(go-to: &quot;Rps&quot;)</tw-passagedata><tw-passagedata pid="8" name="Rps" tags="" position="496,185" size="100,100">&lt;img src=&quot;5.jpg&quot; alt=&quot;scissors&quot;&gt;
+(go-to: &quot;Rps&quot;)</tw-passagedata><tw-passagedata pid="8" name="Rps" tags="" position="496,185" size="100,100">&lt;img src=&quot;5.jpg&quot; alt=&quot;scissors&quot;  width=&quot;50%&quot;&gt;
 The bird shows his claws and it looks like he picked scissors.
 
 (if: $magictype is &quot;Rock&quot;)[Damn it, you win this time.](if: $magictype is &quot;Scissors&quot;)[Aw, it&#39;s a tie!](if: $magictype is &quot;Paper&quot;)[The bird won this time.]
 
 Nevertheless, you feel a magical sensation in your fingertips.
 The bird flies out of the room and signals with his wing for you to follow.
-&lt;img src=&quot;6.jpg&quot; alt=&quot;fingertips&quot;&gt;
+&lt;img src=&quot;6.jpg&quot; alt=&quot;fingertips&quot;  width=&quot;50%&quot;&gt;
 
-[[Follow him.]]</tw-passagedata><tw-passagedata pid="9" name="Follow him." tags="" position="500,316" size="100,100">Now it appears that some of your posessions are sprawled out on the rug. The bird sits in the middle of them with a proud expression. 
-&lt;img src=&quot;7.jpg&quot; alt=&quot;items on rug&quot;&gt;
+[[Follow him.]]</tw-passagedata><tw-passagedata pid="9" name="Follow him." tags="" position="499,316" size="100,100">Now it appears that some of your posessions are sprawled out on the rug. The bird sits in the middle of them with a proud expression. 
+&lt;img src=&quot;7.jpg&quot; alt=&quot;items on rug&quot;  width=&quot;50%&quot;&gt;
 
 It looks like he wants you to pick one
 [[Frying pan]]
