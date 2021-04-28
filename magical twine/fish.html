@@ -280,9 +280,10 @@ Guess that is one way to do it. (set: $rain to true)(if: $rounds is 2)[(set: $bo
 
 (set: $rounds to $rounds+1)
 (set: $bossdefeat to true)(set: $bossdefeat to false)
-</tw-passagedata><tw-passagedata pid="45" name="Attack again" tags="" position="1326,1165" size="100,100">(go-to: &quot;SeaLionFight&quot;)
-(if: $rounds is 2) and (if $bossdefeat is true)[(go-to: &quot;good ending 2&quot;)]
-(if: $rounds is 2) and (if $bossdefeat is false)[(go-to: &quot;bad ending 2&quot;)]</tw-passagedata><tw-passagedata pid="46" name="good ending 2" tags="" position="1274,1321" size="100,100">&#39;&#39;Good ending&#39;&#39;- You defeated the sea lion! At least the city is safe.
+</tw-passagedata><tw-passagedata pid="45" name="Attack again" tags="" position="1326,1165" size="100,100">(if: $rounds is &lt;2)(go-to: &quot;SeaLionFight&quot;)
+(if: $rounds is 2) and (if: $bossdefeat is true)[(go-to: &quot;good ending 2&quot;)]
+(if: $rounds is 2) and (if: $bossdefeat is false)[(go-to: &quot;bad ending 2&quot;)]
+(if: $bossdefeat is true)[(go-to: &quot;good ending 2&quot;)]</tw-passagedata><tw-passagedata pid="46" name="good ending 2" tags="" position="1274,1321" size="100,100">&#39;&#39;Good ending&#39;&#39;- You defeated the sea lion! At least the city is safe.
 
 &#39;&#39;Achievements:&#39;&#39;
 ~(if: $blunt is true)[Blunt Force](if: $air is true)[Hot Air](if: $water is true)[Waterfall]
