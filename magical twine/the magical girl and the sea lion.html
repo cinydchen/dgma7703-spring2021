@@ -231,12 +231,13 @@ However, you hear a muffled rustling sound, and you look in the direction of his
 
 Or maybe you want to [[talk-&gt;ScarecrowTalk]] to him instead?
 (set: $fight to $fight+1)</tw-passagedata><tw-passagedata pid="37" name="SeaLionTalk" tags="" position="1101,908" size="100,100">&lt;audio src=&quot;sealion.wav&quot; autoplay&gt;&lt;/audio&gt;&quot;Hi $name! I&#39;ve heard so much about you, I take it that you have met my friends? We wanted to see what it is like in your city. Hope we didn&#39;t make a huge mess.&quot; The sea lion says while he looks longingly at the fish falling from the sky.
-
+(set: $talk to $talk+1)
 (if: $talk is &gt;=4)[(set: $sweet to true)Congratulations! You unlocked the //sweet talker//  achievement! Because you did not fight anyone during the game, the sea lion decides to spare you, $name, and asks you to work for him in the [[sea.-&gt;Good Ending 1]]]
-(if: $fight is &gt;=3)[(set: $hot to true)&lt;audio src=&quot;achievement.wav&quot; autoplay&gt;&lt;/audio&gt;Congratulations you unlocked the //hot head// achievement! You fought almost everyone in this game...whether that is good decision or not is up to your [[interpretation.-&gt;ok ending]]]
+(else-if: $fight is &gt;=3)[(set: $hot to true)&lt;audio src=&quot;achievement.wav&quot; autoplay&gt;&lt;/audio&gt;Congratulations you unlocked the //hot head// achievement! You fought almost everyone in this game...whether that is good decision or not is up to your [[interpretation.-&gt;ok ending]]]
 (else:)[You guys chat about your favorite fish for a little bit and the sea lion heads on his [[way.-&gt;ok ending]]]
 
-(set: $talk to $talk+1)
+
+
 </tw-passagedata><tw-passagedata pid="38" name="SeaLionFight" tags="" position="1226,915" size="100,100">&lt;audio src=&quot;drums.mp3&quot; autoplay&gt;&lt;/audio&gt;It has all boiled down to this one boss fight.
 Would you like to use your [[$weapon-&gt;BossWeapon]] or [[$magictype?-&gt;BossMagic]]
 (set: $fight to $fight+1)
